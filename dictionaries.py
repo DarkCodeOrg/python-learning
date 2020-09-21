@@ -1,5 +1,5 @@
 # this program depicts the use of dictionaries in python
-
+import json #json library is imported for the use of the json.dumps feature for better printing of the dictionary 
 mydict = {
         'car1'  : {
         "Brand" : "Audi",
