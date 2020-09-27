@@ -6,17 +6,17 @@
 
 
 class Human:
-    def __init__(self,name,age,gender):
+    def __init__(self,name,age,gender):  ## the init function is executed whenever a class is initiated   // we can use this function to pass parameters to the object when it is created  
         self.name = name
         self.age = age
         self.gender = gender
 
-    def greet(self):
+    def greet(self):   ## self refers to the name of the object that is being creatd using this class 
         print("Hello I am " + self.name)
 
     def say_hi(self):
         print("HI EVERYBODY !!")
-
+    
     
 
     
