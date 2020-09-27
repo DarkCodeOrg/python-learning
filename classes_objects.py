@@ -11,13 +11,20 @@ class Human:
         self.age = age
         self.gender = gender
 
-    def My_classFunc(self):
+    def greet(self):
         print("Hello I am " + self.name)
+
+    def say_hi(self):
+        print("HI EVERYBODY !!")
+
+    
+
     
 Human1 = Human("David",32,"male")
 
 print(Human1.name)
 print(Human1.age)
 print(Human1.gender)
-Human1.My_classFunc()
+Human1.greet()
+Human1.say_hi()
 
