@@ -60,6 +60,7 @@ file4.write("this is the line\n")
 file4.write("apple , banana , cherry , mango")
 content = file4.read()
 print(content)  #TODO debug here...
+file4.close()
 
 if os.path.exists("myfile"):
     os.remove("myfile")
