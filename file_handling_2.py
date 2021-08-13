@@ -21,7 +21,7 @@ file_2.close()
 filenew = open("student.dat" , "w")
 No_of_stdnt = int(input("enter the no of students in class :"))
 for i in range(No_of_stdnt):
-    name = input("Enter the name of the studnet :")
+    name = input("Enter the name of the student :")
     roll = int(input("enter the roll no of the student :"))
     Marks = int(input("eneter the marks obtained by the student :"))
     data = str(roll) + "," + name + "," + str(Marks) + '\n'
