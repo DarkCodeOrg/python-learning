@@ -36,6 +36,8 @@ file.write("writing this in append mode\n")
 file.close
 
 ## using write with with()
+# the advantage of using with is that it ensures the file is closed
+# after nested block of code is ran 
 
 with open('trial.txt','r+') as file:
     text = file.read()
