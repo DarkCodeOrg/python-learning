@@ -2,7 +2,10 @@
 ## File pointer    ( analogous to a bookmark in a book )
 
 import sys
+#sys.path.append("/home/david/hello_world/python/basics")
 import os
+
+#import list_adv as f_list  ## it has functions to manipulate a list
 
 ## infile = open("filename","r") would open the file and put the file
 # pointer at the beginning of the file
@@ -49,5 +52,32 @@ for i in range(No_of_stdnt):
 dfile.close()
 
 
+## searching in a binary file
+
+found = False
+dfile = open("student_new.dat","rb")
+search_for = []  ## these are the roll nos to find for
+reply = 'y' 
+while reply == 'y':
+    foo = int(input("Enter the roll number to search for :"))
+    search_for.append(foo)
+    reply = input("Do you wish to search for more ?(y/n) :")
+else :
+
+    try:
+        print("Searching in the file student_new.dat ......")
+        while True:
+            data_r = pickle.load(dfile)
+            if data_r['Roll'] in search_for:
+                print(data_r)
+                found = True
+    except EOFError:
+        if found == False:
+            print("no such records found..")
+
+        else:
+            print("search successful")
+
+            dfile.close()
 
 
