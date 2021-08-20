@@ -72,3 +72,6 @@ def menu():
 menu()
 
 
+### to use this as a module in other programs uncomment all the 
+### lines with menu()
+
